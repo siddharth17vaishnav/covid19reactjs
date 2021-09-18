@@ -2,11 +2,18 @@
   "name": "covid",
   "version": "0.1.0",
   "private": true,
+  "homepage":"http://siddharth17vaishnav.github.io/covid19reactjs",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "chart.js": "^3.5.1",
+    "classnames": "^2.3.1",
     "react": "^17.0.2",
+    "react-chartjs-2": "^3.0.5",
+    "react-countup": "^5.2.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
@@ -15,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
